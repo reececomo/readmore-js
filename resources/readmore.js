@@ -23,7 +23,9 @@ $(".read-more .button").each(function() {
 
     $self.on('click', function() {
         // Set height to prevent instant jump-down when max height is removed
-        $container.css({ "height": $container.height(), "max-height": 9999 }).animate({ "height": totalHeight });
+        $container
+            .css({ "height": $container.height(), "max-height": 9999 })
+            .animate({ "height": totalHeight });
         $prompt.fadeOut(); // fade out read-more prompt
         return false; // prevent jump-down
     });
