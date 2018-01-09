@@ -11,4 +11,5 @@ Simply add the "read-more" class to your HTML object, and a "button" sub-element
         </p>
     </div>
 
-http://htmlpreview.github.com/?https://raw.githubusercontent.com/reececomo/readmore-js/master/demo.html
+[View Demo](https://rawgit.com/reececomo/readmore-js/master/demo.html)
+https://rawgit.com/reececomo/readmore-js/master/demo.html
