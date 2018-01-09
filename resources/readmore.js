@@ -8,8 +8,8 @@
  */
 $(".read-more .button").each(function() {
     // Get objects
-    var $self = $(this);
-    var $prompt = $self.parent();
+    var thisButton = $(this);
+    var $prompt = thisButton.parent();
     var $container = $prompt.parent();
 
     // Get the height of the container
@@ -21,12 +21,12 @@ $(".read-more .button").each(function() {
         $prompt.hide();
     }
 
-    $self.on('click', function() {
+    thisButton.on('click', function() {
         // Set height to prevent instant jump-down when max height is removed
-        $container
-            .css({ "height": $container.height(), "max-height": 9999 })
-            .animate({ "height": totalHeight });
+        $container.css({ "height": $container.height(), "max-height": 9999 }).animate({ "height": totalHeight });
+        
         $prompt.fadeOut(); // fade out read-more prompt
+        
         return false; // prevent jump-down
     });
 });
