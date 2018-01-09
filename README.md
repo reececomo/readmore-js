@@ -8,5 +8,5 @@ Simply add the "read-more" class to your HTML object, and a "button" sub-element
         <p>Lorem ipsum dolar sit...</p>
         <p>Dolar sit amet lorem ip...</p>
         
-        <p class="prompt"><a href="#" class="button">Read More</a></p>
+        <p class="prompt"><a class="button" href="#">Read More</a></p>
     </div>
