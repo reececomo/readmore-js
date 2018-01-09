@@ -7,12 +7,12 @@
         <!-- Include jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
-        <script src="https://rawgithub.com/reececomo/readmore-js/blob/master/resources/readmore.js"></script>
+        <script src="https://rawgit.com/reececomo/readmore-js/master/resources/readmore.js"></script>
         <link type="stylesheet" rel="https://rawgithub.com/reececomo/readmore-js/blob/master/resources/readmore.css"></script>
     </head>
     <body>
         <div class="container">
-            <div style="border-radius:15px;border:1px solid #ccc;">
+            <div class="demo-box">
                 <div class="read-more">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -46,10 +46,18 @@
                     dignissim. Donec pretium est</p>
 
                     <p class="prompt">
-                        <a class="button btn btn-primary" href="#"> Read More </a>
+                        <a class="button btn btn-primary" href="#">Read More</a>
                     </p>
                 </div>
             </div>
         </div>
+        
+        <style>
+            .demo-box {
+                border-radius:15px;
+                border:1px solid #ccc;
+                padding:25px;
+            }
+        </style>
     </body>
 </html>
