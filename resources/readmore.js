@@ -7,11 +7,11 @@
  * https://css-tricks.com/text-fade-read-more/
  */
 $(document).ready(function() {
-
+    
     $(".read-more .button").each(function() {
         // Get objects
-        var thisButton = $(this);
-        var $prompt = thisButton.parent();
+        var $self = $(this);
+        var $prompt = $self.parent();
         var $container = $prompt.parent();
 
         // Get the height of the container
@@ -21,9 +21,10 @@ $(document).ready(function() {
             // Too small initially
             $container.css('max-height', 'none');
             $prompt.hide();
+            console.log("readmore.js: Section too small to minimise");
         }
 
-        thisButton.on('click', function() {
+        $self.on('click', function() {
             // Set height to prevent instant jump-down when max height is removed
             $container.css({ "height": $container.height(), "max-height": 9999 }).animate({ "height": totalHeight });
 
