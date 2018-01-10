@@ -17,11 +17,10 @@ $(document).ready(function() {
         // Get the height of the container
         var totalHeight = $container[0].scrollHeight;
 
-        if(totalHeight < 150) {
-            // Too small initially
+        if(totalHeight <= $container.height()) {
+            // Too small: does not require read-more
             $container.css('max-height', 'none');
             $prompt.hide();
-            console.log("readmore.js: Section too small to minimise");
         }
 
         $self.on('click', function() {
