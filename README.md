@@ -1,5 +1,5 @@
 # readmore-js
-Simple "Read More" plugin for HTML5 projects
+Simple "Read More" jQuery plugin for HTML5 projects
 
 Simply add the "read-more" class to your HTML object, and a "prompt" sub-element to expand the content:
 
