@@ -1,0 +1,9 @@
+/*
+ * Read More Plugin
+ *  by Reece Como
+ *  9 Jan 2018
+ *
+ * Expanded from: "Text Fade Out / Read More Link | CSS-Tricks"
+ * https://css-tricks.com/text-fade-read-more/
+ */
+ .read-more{max-height:120px;position:relative;overflow:hidden}.read-more .prompt{position:absolute;bottom:0;left:0;width:100%;text-align:center;margin:0;padding-top:60px;padding-bottom:9px;background-image:linear-gradient(to bottom,rgba(255,255,255,0),white)}.read-more .prompt .button{padding:5px 30px;border-radius:99px;box-shadow:0 0 15px 5px white;text-shadow:1px 1px rgba(0,0,0,.3)}.read-more.big-preview{max-height:240px}.read-more.big-preview .prompt{padding-top:140px}
